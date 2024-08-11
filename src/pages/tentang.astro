@@ -1,0 +1,57 @@
+---
+import '../styles/global.css';
+import Footer from '../components/Footer.astro';
+import Navbar from '../components/Navbar.astro';
+const title = "Tentang Kami";
+const description = "Pelajari lebih lanjut tentang perusahaan kami dan nilai-nilai yang kami anut";
+---
+
+<html lang="id">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content={description} />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | Nama Perusahaan Anda</title>
+	</head>
+	<body class="bg-gray-100">
+		<Navbar />
+
+		<main class="container mx-auto px-4 py-8">
+			<h1 class="text-4xl font-bold mb-6">{title}</h1>
+			
+			<section class="bg-white p-6 rounded-lg shadow-md mb-8">
+				<h2 class="text-2xl font-semibold mb-4">Siapa Kami</h2>
+				<p class="mb-4">
+					Kami adalah perusahaan yang berkomitmen untuk memberikan solusi terbaik bagi pelanggan kami. Didirikan pada tahun [tahun pendirian], kami telah tumbuh menjadi pemimpin industri dalam [bidang industri Anda].
+				</p>
+				<p>
+					Visi kami adalah [tuliskan visi perusahaan Anda]. Misi kami adalah [tuliskan misi perusahaan Anda].
+				</p>
+			</section>
+
+			<section class="bg-white p-6 rounded-lg shadow-md mb-8">
+				<h2 class="text-2xl font-semibold mb-4">Nilai-Nilai Kami</h2>
+				<ul class="list-disc list-inside">
+					<li class="mb-2">Integritas: Kami selalu bertindak dengan kejujuran dan etika yang tinggi.</li>
+					<li class="mb-2">Inovasi: Kami terus berinovasi untuk memberikan solusi terbaik.</li>
+					<li class="mb-2">Kualitas: Kami berkomitmen untuk memberikan produk dan layanan berkualitas tinggi.</li>
+					<li>Kepuasan Pelanggan: Kepuasan pelanggan adalah prioritas utama kami.</li>
+				</ul>
+			</section>
+
+			<section class="bg-white p-6 rounded-lg shadow-md">
+				<h2 class="text-2xl font-semibold mb-4">Tim Kami</h2>
+				<p class="mb-4">
+					Tim kami terdiri dari para profesional berpengalaman yang berdedikasi untuk memberikan yang terbaik bagi pelanggan kami.
+				</p>
+				<p>
+					Kami percaya bahwa kekuatan tim kami terletak pada keragaman latar belakang, pengalaman, dan keahlian yang kami miliki.
+				</p>
+			</section>
+		</main>
+
+		<Footer />
+	</body>
+</html>
